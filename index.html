@@ -39,14 +39,11 @@
                             <a href="" class="nav-link text-dark">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Assinatura</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="" class="nav-link text-dark">Quero ser diarista</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Cadastre-se</a>
+                            <a href="cadastro.html" class="nav-link text-dark">Cadastre-se</a>
                         </li>
 
                         <li class="nav-item">
@@ -66,12 +63,14 @@
 
     <section class="container text-overlay">
         <div class="logobackground">
-            <img src="assets/images/logo_site_branca.png" width="250">
+            <div>
+                <img src="assets/images/logo_site_branca.png" width="250">
+            </div>
             <h2>EXPÊRIENCIA QUE VOCÊ PODE CONFIAR</h2>
         </div>
     </section>
 
-    <section class="container container-service">
+    <section class="container-fluid container-service">
         <h2>Procurando por um serviço de limpeza?</h2><br>
         <a href="index.html"><button type="button" class="btn btn-warning">
                 <h2>Agende Agora!</h2>
@@ -116,7 +115,7 @@
     </section>
 
     <section>
-        <div class="contrainer d-flex justify-content-center diarista text-center">
+        <div class="container-fluid d-flex justify-content-center diarista text-center">
             <h2>Como Trabalhar para Clean 'em All</h2>
             <a href="index.html"><button type="button" class="btn btn-warning">
                     <h3>Quero ser Diarista!</h3>
@@ -126,14 +125,24 @@
 
 
     <footer>
-        <div div="rodape">
-            <div class="container text-center">
+        <div>
+            <div class="container d-flex justify-content-center">
                 <img width="200px" src="assets/images/logo_clean_em_all-removebg.png">
             </div>
 
-            <div class="container">
-                <a href="">Agende um horário!</a>
-                <a href="">Torne-se uma Diarista!</a>
+            <div>
+                <ul class="text-center lista-rodape d-flex flex-column">
+                    <li><a class="nav-link text-dark size-li" href="">Agende um horário!</a></li>
+                    <li><a class="nav-link text-dark" href="">Torne-se uma Diarista!</a></li>
+                    <li><a class="nav-link text-dark" href="">Serviços</a></li>
+                    <li><a class="nav-link text-dark" href="">Cadastre-se</a></li>
+                    <li><a class="nav-link text-dark" href="">Entrar</a></li>
+
+                </ul>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <p>© 2024 Clean 'em All. All rights reserved</p>
             </div>
         </div>
 

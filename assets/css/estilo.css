@@ -1,4 +1,3 @@
-
 .logobackground {
     display: flex;
     position: relative;
@@ -14,8 +13,8 @@ a {
     text-decoration: none;
 }
 
-body{
-    font-family:'Times New Roman', Times, serif
+body {
+    font-family: 'Times New Roman', Times, serif
 }
 
 .video-container {
@@ -33,7 +32,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .container-service {
@@ -49,18 +48,77 @@ body{
 .text-overlay {
     position: relative;
     z-index: 10;
-    margin-top: -300px; 
+    margin-top: -300px;
     text-align: center;
     color: white;
 }
 
-.diarista{
+.diarista {
     flex-wrap: wrap;
     background-color: #449abb;
     color: #ffffff;
     padding: 20px;
 }
 
-.rodape{
-    padding: 20px;
+
+footer {
+    padding-top: 20px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    
+}
+ .lista-rodape{
+    flex-wrap: wrap;
+    margin-right: 30px;
+    
+ }
+
+
+
+ @media (min-width: 768px) and (max-width: 991.98px) {
+	.container-service{
+        margin-top: 160px;
+
+    }
+    .diarista{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 991.98px) {
+    .diarista{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.container-service{
+        margin-top: 160px;
+    }
+    .logobackground{
+        flex-direction: column;
+    }
+    .diarista{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1200px) {
+	.container-service{
+        margin-top: 205px;
+        max-height: 200px;
+    }
+    .diarista{
+        flex-direction: column;
+    }
+}
+
+
+.container-cadastro{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
 }

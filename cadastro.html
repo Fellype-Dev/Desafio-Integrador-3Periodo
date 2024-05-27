@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,69 +9,50 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cadastro.css">
 
     <title>Clean 'em All</title>
-
     <link rel="icon" href="assets/images/icon_Clean_'em_All.png">
 </head>
-
-<style>
-    body {
-        background-color: #449abb;
-    }
-</style>
-
 <body>
 
-
-
-    <section>
-        <form>
-            <div class="container quadrado-cadastro">
-                <div class="d-flex justify-content-center logo-cadastro">
-                    <img width="300px" src="/assets/images/logo_clean_em_all-removebg.png">
-                </div>
-                <div class="d-flex flex-column align-items-center">
-
-                    <div class="mb-3">
-                        <label for="floatingInputGroup1">Nome Completo</label>
-                        <input class="form-control" type="text" placeholder="Nome Sobrenome"
-                            aria-label="default input example">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="@exemplo.com">
-
-                        <div class="mb-3">
-                            <label for="floatingInputGroup1">Endereço</label>
-                            <input class="form-control" type="text" aria-label="default input example">
-                        </div>
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                        <div id="emailHelp" class="form-text text-warning">Nunca compartilhe sua senha.</div>
-                    </div>
-
-                    <a class="btn btn-primary" href="assinatura.html" role="button">Confirmar Cadastro</a>
-                    <a class="btn btn-link" href="Login.html" role="button">Ja tem uma conta?</a>
-
-                </div>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <form class="form">
+            <div class="d-flex justify-content-center">
+                <img width="300px" src="/assets/images/logo_clean_em_all-removebg.png">
             </div>
-        </form>
-    </section>
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Nome</span>
+                </label>
 
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Sobrenome</span>
+                </label>
+            </div>  
+                    
+            <label>
+                <input required="" placeholder="" type="email" class="input">
+                <span>Email</span>
+            </label> 
+                
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span>Senha</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span>Confirmar Senha</span>
+            </label>
+            <button class="submit">Confirmar</button>
+            <p class="signin">Já tem uma conta? <a href="#">Faça seu Login!</a> </p>
+        </form>
+    </div>
 
 </body>
-
 </html>

@@ -14,7 +14,8 @@ a {
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    background-image: radial-gradient(circle at 57% 36%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 10%, transparent 10%, transparent 100%), radial-gradient(circle at 22% 61%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 68% 97%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 41%, transparent 41%, transparent 100%), radial-gradient(circle at 57% 89%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 30%, transparent 30%, transparent 100%), radial-gradient(circle at 39% 80%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 88% 71%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 30%, transparent 30%, transparent 100%), linear-gradient(0deg, rgb(246, 246, 246), rgb(246, 246, 246));
 }
 
 .video-container {
@@ -38,11 +39,12 @@ body {
 .container-service {
     width: 100%;
     padding: 50px 0;
-    background-color: #449abb;
+    background: rgb(35, 64, 75);
+    background: linear-gradient(0deg, rgba(35, 64, 75, 1) 0%, rgba(68, 154, 187, 1) 55%, rgba(68, 154, 187, 1) 100%, rgba(68, 154, 187, 1) 100%);
     z-index: 20;
     position: relative;
     text-align: center;
-    color: #ffffff;
+    color: #f6f6f6;
 }
 
 .text-overlay {
@@ -50,13 +52,14 @@ body {
     z-index: 10;
     margin-top: -300px;
     text-align: center;
-    color: white;
+    color: f6f6f6;
 }
 
 .diarista {
     flex-wrap: wrap;
-    background-color: #449abb;
-    color: #ffffff;
+    background: rgb(35, 64, 75);
+    background: linear-gradient(0deg, rgba(35, 64, 75, 1) 0%, rgba(68, 154, 187, 1) 55%, rgba(68, 154, 187, 1) 100%, rgba(68, 154, 187, 1) 100%);
+    color: #f6f6f6;
     padding: 20px;
 }
 
@@ -68,68 +71,60 @@ footer {
 li {
     list-style-type: none;
     display: inline;
-    
+
 }
- .lista-rodape{
+
+.lista-rodape {
     flex-wrap: wrap;
     margin-right: 30px;
-    
- }
+
+}
 
 
 
- @media (min-width: 768px) and (max-width: 991.98px) {
-	.container-service{
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container-service {
         margin-top: 160px;
 
     }
-    .diarista{
+
+    .diarista {
         flex-direction: column;
     }
 }
 
 @media (min-width: 730px) and (max-width: 991.98px) {
-    .diarista{
+    .diarista {
         flex-direction: column;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	.container-service{
+    .container-service {
         margin-top: 160px;
     }
-    .logobackground{
+
+    .logobackground {
         flex-direction: column;
     }
-    .diarista{
+
+    .diarista {
         flex-direction: column;
     }
 }
 
 @media (min-width: 1200px) {
-	.container-service{
-        margin-top: 205px;
+    .container-service {
+        margin-top: 161px;
         max-height: 200px;
     }
-    .diarista{
+
+    .diarista {
         flex-direction: column;
     }
-}
 
-
-.quadrado-cadastro{
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 5%;
-    background-size: cover;
-    background-size: 100% 30%;
-    background-repeat: no-repeat;
-}
-
-.logo-cadastro{
-    margin-bottom: 50px;
-    padding-top: 20px;
+    .texto-video {
+        flex-direction: column;
+    }
 }
 

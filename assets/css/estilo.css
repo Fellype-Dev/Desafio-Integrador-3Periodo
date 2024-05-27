@@ -117,8 +117,19 @@ li {
 }
 
 
-.container-cadastro{
+.quadrado-cadastro{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5%;
+    background-size: cover;
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
 }
+
+.logo-cadastro{
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+

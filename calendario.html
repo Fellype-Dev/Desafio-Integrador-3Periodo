@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calendario.css">
+
+    <title>Clean 'em All</title>
+
+    <link rel="icon" href="assets/images/icon_Clean_'em_All.png">
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-white fixed-top">
+
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/images/logo_clean_em_all-removebg.png" width="142">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-dark"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="calendario.html" class="nav-link text-dark">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark">Quero ser diarista</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link text-dark">Cadastre-se</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <div class="container">
+        <h1 class="my-4 text-center">Agendamento</h1>
+        <div id="calendar"></div>
+    </div>
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalLabel">Realizar Agendamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="eventForm">
+                        <div class="form-group">
+                            <label for="eventDate">Data</label>
+                            <input type="text" class="form-control" id="eventDate" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventTitle">Nome Completo:</label>
+                            <input type="text" class="form-control" id="eventTitle" required>
+                            <label for="eventTitle">CPF:</label>
+                            <input type="text" class="form-control" id="eventTitle" required>
+                            <div class="mb-3">
+                                <label for="disabledSelect" class="form-label">Tipo Serviço</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Limpeza Rezidencial - R$200,00</option>
+                                    <option>Limpeza Empresarial - R$250,00</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="disabledSelect" class="form-label">Forma Pagamento</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Cartão de credito</option>
+                                    <option>Cartão de debito</option>
+                                    <option>PIX</option>
+                                    <option>Dinheiro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Realizar Agendamento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div>
+            <div class="container d-flex justify-content-center">
+                <img width="200px" src="assets/images/logo_clean_em_all-removebg.png">
+                <br>
+            </div>
+
+            <div>
+                <ul class="text-center lista-rodape d-flex flex-column">
+                    <li><a class="nav-link text-dark" href="">Torne-se uma Diarista!</a></li>
+                    <li><a class="nav-link text-dark" href="">Cadastre-se</a></li>
+                    <li><a class="nav-link text-dark" href="">Entrar</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <p>© 2024 Clean 'em All. All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/calendario.js"></script>
+
+</body>
+
+</html>

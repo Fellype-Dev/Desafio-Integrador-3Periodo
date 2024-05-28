@@ -94,7 +94,17 @@ body {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    transform: .3s ease;
+    transition: .3s ease;
+    width: 100%;
+}
+
+.btn-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-link button {
+    width: 100%;
 }
 
 .submit:hover {

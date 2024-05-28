@@ -77,7 +77,11 @@ li {
 .lista-rodape {
     flex-wrap: wrap;
     margin-right: 30px;
+}
 
+.lista-rodape a {
+    display: inline;
+    padding: 0;
 }
 
 

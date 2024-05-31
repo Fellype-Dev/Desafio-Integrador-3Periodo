@@ -26,6 +26,11 @@
             <div class="d-flex justify-content-center">
                 <img width="300px" src="/assets/images/logo_clean_em_all-removebg.png">
             </div>
+            <div class="text-center">
+                <strong>
+                    <h3><span style="color: rgba(68, 154, 187, 1);">Venha fazer parte desta equipe!</span></h3>
+                </strong>
+            </div>
             <div class="flex">
 
                 <label>
@@ -45,16 +50,44 @@
             </label>
 
             <label>
-                <input required="" placeholder="" type="password" class="input" id="password">
-                <span>Senha</span>
+                <input required="" placeholder="" type="number" class="input" id="cpf">
+                <span>CPF</span>
             </label>
             <label>
-                <input required="" placeholder="" type="password" class="input" id="confirmPassword">
-                <span>Confirmar Senha</span>
+                <input required="" placeholder="" type="number" class="input" id="celular" pattern="99935-4668">
+                <span>Telefone</span>
             </label>
-            <button type="button" class="btn btn-primary btn-block" onclick="validateForm()">Confirmar</button>
-            <p class="signin">Já tem uma conta? <a href="#">Faça seu Login!</a> </p>
+            <label>
+                <input placeholder="" type="checkbox" id="serviço">
+                <span>Serviço Domiciliar</span>
+            </label>
+            <label>
+                <input placeholder="" type="checkbox" id="serviço">
+                <span>Serviço Empresarial</span>
+            </label>
+            <button type="button" class="btn btn-primary btn-block" onclick="openSuccessModal()">Enviar formulário</button>
         </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Sucesso!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Seu formulário foi enviado com sucesso!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <a href="index.html" class="btn btn-primary">Ir para a página inicial</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -67,13 +100,11 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script>
-        function validateForm() {
+        function openSuccessModal() {
             var form = document.getElementById('form');
             if (form.checkValidity()) {
-                // All fields are valid
-                window.location.href = 'index.html';
+                $('#successModal').modal('show');
             } else {
-                // Trigger the browser's form validation UI
                 form.reportValidity();
             }
         }

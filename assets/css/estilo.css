@@ -38,13 +38,13 @@ body {
 
 .container-service {
     width: 100%;
-    padding: 50px 0;
-    background: rgb(35, 64, 75);
-    background: linear-gradient(0deg, rgba(35, 64, 75, 1) 0%, rgba(68, 154, 187, 1) 55%, rgba(68, 154, 187, 1) 100%, rgba(68, 154, 187, 1) 100%);
+    padding: 40px 0;
+    background: rgba(68, 154, 187, 1);
     z-index: 20;
     position: relative;
     text-align: center;
     color: #f6f6f6;
+
 }
 
 .text-overlay {
@@ -57,10 +57,10 @@ body {
 
 .diarista {
     flex-wrap: wrap;
-    background: rgb(35, 64, 75);
-    background: linear-gradient(0deg, rgba(35, 64, 75, 1) 0%, rgba(68, 154, 187, 1) 55%, rgba(68, 154, 187, 1) 100%, rgba(68, 154, 187, 1) 100%);
+    background: rgba(68, 154, 187, 1);
     color: #f6f6f6;
     padding: 20px;
+    margin-top: 20px;
 }
 
 
@@ -100,6 +100,10 @@ li {
 @media (min-width: 730px) and (max-width: 991.98px) {
     .diarista {
         flex-direction: column;
+        margin-top: 30px;
+    }
+    table{
+        flex-direction: row-reverse;
     }
 }
 
@@ -114,17 +118,19 @@ li {
 
     .diarista {
         flex-direction: column;
+        margin-top: 40px;
     }
 }
 
 @media (min-width: 1200px) {
     .container-service {
         margin-top: 161px;
-        max-height: 200px;
+        max-height: 400px;
     }
 
     .diarista {
         flex-direction: column;
+        margin-top: 50px;
     }
 
     .texto-video {
@@ -132,3 +138,163 @@ li {
     }
 }
 
+.button-hov {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+.button-hov:hover {
+    background-color: #dec60b;
+    box-shadow: 0px 15px 20px rgba(68, 154, 187, 1);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-hov:active {
+    transform: translateY(-1px);
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    margin-top: 30px;
+
+}
+
+.book1 {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    margin-top: 30px;
+    }
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(/assets/images/Limpeza_domestica.jpg);
+    background-size: cover;
+}
+
+.cover1 {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(/assets/images/Limpeza_empresarial.jpg);
+    background-size: cover;
+}
+
+.book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+
+}
+
+.book1:hover .cover1 {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+}
+
+p {
+    padding-left: 40px;
+    padding-right: 20px;
+
+}

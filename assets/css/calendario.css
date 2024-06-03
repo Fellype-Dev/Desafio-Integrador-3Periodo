@@ -52,7 +52,6 @@ body {
     color: #ffffff;
 }
 
-/* Media queries */
 @media (max-width: 768px) {
     .month {
         margin: 5px;

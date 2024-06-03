@@ -15,8 +15,12 @@ a {
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s, color 0.3s;
+    color:#000;
     background-image: radial-gradient(circle at 57% 36%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 10%, transparent 10%, transparent 100%), radial-gradient(circle at 22% 61%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 36%, transparent 36%, transparent 100%), radial-gradient(circle at 68% 97%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 41%, transparent 41%, transparent 100%), radial-gradient(circle at 57% 89%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 30%, transparent 30%, transparent 100%), radial-gradient(circle at 39% 80%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 88% 71%, rgba(114, 114, 114, 0.04) 0%, rgba(114, 114, 114, 0.04) 30%, transparent 30%, transparent 100%), linear-gradient(0deg, rgb(246, 246, 246), rgb(246, 246, 246));
 }
+
+
 
 .video-container {
     width: 100%;
@@ -102,7 +106,8 @@ li {
         flex-direction: column;
         margin-top: 30px;
     }
-    table{
+
+    table {
         flex-direction: row-reverse;
     }
 }
@@ -218,7 +223,7 @@ li {
     justify-content: center;
     color: #000;
     margin-top: 30px;
-    }
+}
 
 .cover {
     top: 0;

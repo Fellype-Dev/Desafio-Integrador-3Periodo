@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     const today = new Date();
     const currentYear = today.getFullYear();
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let day = document.createElement("div");
             day.className = "day";
             day.innerText = i;
-            day.addEventListener("click", function() {
+            day.addEventListener("click", function () {
                 openEventModal(year, month, i);
             });
             days.appendChild(day);
@@ -65,8 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
     createCalendar(currentYear, today.getMonth());
 
     document.getElementById("eventForm").addEventListener("submit", addEvent);
-    
-    $('#sidebarToggle').click(function() {
+
+    $('#sidebarToggle').click(function () {
         $('#sidebar').toggleClass('show');
     });
 });
+
